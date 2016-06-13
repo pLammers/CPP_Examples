@@ -22,7 +22,6 @@ int main()
 	std::string line;
 	std::vector<double> input;
 	double value;
-	int count = 0;
 
 	std::cout << "Bitte Zahlen eingeben, Leerzeichen zur Trennung! '.' fuer Dezimalzahlen!" << std::endl;
 
@@ -39,6 +38,6 @@ int main()
 
 	std::cout << "Enter zum Beenden druecken...";
 	std::cin.get();
-	//system("pause");
+
 	return 0;
 }
