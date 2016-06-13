@@ -1,6 +1,6 @@
-#pragma once
 #include <thread>
 #include <iostream>
+#include <Windows.h>
 
 class Counter
 {

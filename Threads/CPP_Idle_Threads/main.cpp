@@ -1,8 +1,9 @@
 #include "Counter.h"
 #include <vector>
 
+//Bereits in Counter.h included:
 //Sleep for Windows
-#include <Windows.h>
+//#include <Windows.h>
 //usleep for UNIX
 //#include <unistd.h>
 
@@ -18,7 +19,7 @@ void GUIsingleThread(Counter *count)
 		//Unterbrechen Schleife im counter-objekt -> Leerlauf wird beendet
 		if (check == '1') count->setStatus(false);
 		Sleep(5);
-		//usleep(1);		//Fuer Linux, nicht getestet
+		//usleep(5000);		//Fuer Linux, nicht getestet
 	} while (check != '0');
 
 	count->stopThread();

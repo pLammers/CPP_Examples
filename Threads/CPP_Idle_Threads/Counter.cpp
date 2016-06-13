@@ -21,7 +21,7 @@ void Counter::run()
 	//"Endlosschleife" bis available in main geaendert wird
 	while (this->available) 
 	{
-		
+		Sleep(5);
 	}
 
 	//Beenden Thread, threadStatus wird in main gesetzt
