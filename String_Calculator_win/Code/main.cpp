@@ -1,7 +1,15 @@
 #include "calculator.h"
+#include <Windows.h>
 
 int main()
 {
+	//Veraendern Fenstergroeﬂe
+	//Suchen Standartfenster
+	HWND hwnd = FindWindow("ConsoleWindowClass", NULL);
+	//MoveWindow(Fenster, X-pos, Y-pos, Breite, Hoehe, repaint)
+	MoveWindow(hwnd, 500, 300, 800, 400, TRUE);
+
+
 	calculator *calc = new calculator();
 
 	while (1)

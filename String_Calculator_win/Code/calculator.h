@@ -20,6 +20,8 @@ private:
 
 	std::string solveFormula(std::string);
 
+	//Wird aufgerufen, wenn Formel mit "[" beginnt
+	std::string solveAverage(std::string);
 	//Wird aufgerufen, wenn "+" oder "-" in der Formel existieren
 	std::string solveAddSub(std::string);
 	//Wird aufgerufen, wenn "*" oder "/" in der Formel existieren
