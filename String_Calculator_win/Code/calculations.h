@@ -1,5 +1,7 @@
 #pragma once
 #include <vector>
+#include <sstream>
+#include <iomanip>
 
 class calculations
 {
@@ -17,5 +19,9 @@ public:
 	double div(double, double);
 	//Gibt den Durchschnitt aller Werte im uebergebenen vector zurueck
 	double avg(std::vector<double>);
+
+private:
+
+	std::stringstream string_stream;
 };
 

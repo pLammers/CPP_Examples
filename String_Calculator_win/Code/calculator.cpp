@@ -21,7 +21,7 @@ void calculator::run()
 
 	//Wenn eingabe 'man' ist geben wir das Handbuch aus, ansonsten loesen wir die Formel
 	if (formula == "man") this->manual();
-	else std::cout << "Ergebnis: " << this->solveFormula(formula) << std::endl;
+	else { formula = this->solveFormula(formula); formula.erase(formula.size() - 1, 1); std::cout << "Ergebnis: " << formula << std::endl; }
 
 	//Loeschen cin und die Formel
 	std::cin.clear();
